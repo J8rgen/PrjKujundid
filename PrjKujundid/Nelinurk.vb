@@ -21,7 +21,11 @@
 
     'Funktsioon arvutab ja tagastab nelinurga ymberm66du
     Public Overrides Function leiaYmbermoot() As Double
-        Return kylgA + kylgB + kylgC + kylgD
+        If kylgA = 0 Or kylgB = 0 Or kylgC = 0 Or kylgD = 0 Then
+            Return 0
+        Else
+            Return kylgA + kylgB + kylgC + kylgD
+        End If
     End Function
 
 End Class

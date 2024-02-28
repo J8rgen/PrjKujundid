@@ -7,7 +7,7 @@
         MyBase.New("Rööpkülik", alus, kylg, alus, kylg)
         Me.korgus = korgus
     End Sub
-    ' Funktsioon arvutab ja tagastab ristküliku pindala.
+    ' Funktsioon arvutab ja tagastab roopkyliku pindala.
     Public Overrides Function leiaPindala() As Double
         If kylgB = 0 Then
             Return 0

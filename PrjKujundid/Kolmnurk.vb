@@ -18,12 +18,21 @@ Public Class Kolmnurk
     'Overrides - Kirjutame üle baasklassist Kujund päritud samanimelise meetodi LeiaPindala()
     'Kolmnurga pindala arvutamine
     Public Overrides Function leiaPindala() As Double
-        Return kylgA * korgus / 2
+        If kylgA > kylgB * 2 Or kylgB > kylgA * 2 Then ' Kas tekib kolmnurk
+            Return 0
+        Else
+            Return kylgA * korgus / 2
+        End If
     End Function
 
     'Kolmnurga ymberm66du arvutamine
     Public Overrides Function leiaYmberMoot() As Double
-        Return kylgA + kylgB + kylgC
+        If kylgA > kylgB * 2 Or kylgB > kylgA * 2 Then ' Kas tekib kolmnurk
+            Return 0
+        Else
+            Return kylgA + kylgB + kylgC
+        End If
+
     End Function
 
 
