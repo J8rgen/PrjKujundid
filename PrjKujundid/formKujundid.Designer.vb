@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKujundid
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class formKujundid
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -39,6 +39,7 @@ Partial Class formKujundid
         Me.txtPindala = New System.Windows.Forms.TextBox()
         Me.txtYmbermoot = New System.Windows.Forms.TextBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -148,9 +149,9 @@ Partial Class formKujundid
         Me.lblTyyp.AutoSize = True
         Me.lblTyyp.Location = New System.Drawing.Point(81, 33)
         Me.lblTyyp.Name = "lblTyyp"
-        Me.lblTyyp.Size = New System.Drawing.Size(39, 13)
+        Me.lblTyyp.Size = New System.Drawing.Size(60, 13)
         Me.lblTyyp.TabIndex = 5
-        Me.lblTyyp.Text = "Label4"
+        Me.lblTyyp.Text = "Määramata"
         '
         'Label3
         '
@@ -193,11 +194,21 @@ Partial Class formKujundid
         Me.txtYmbermoot.Size = New System.Drawing.Size(100, 20)
         Me.txtYmbermoot.TabIndex = 0
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.ComboBox1.Location = New System.Drawing.Point(91, 118)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 3
+        '
         'formKujundid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(466, 313)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -229,4 +240,5 @@ Partial Class formKujundid
     Friend WithEvents btnRuut As Button
     Friend WithEvents btnKolmnurk As Button
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
